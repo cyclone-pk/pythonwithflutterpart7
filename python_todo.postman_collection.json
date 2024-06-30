@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "9f8a9749-e1fd-432c-9088-73afe80069b0",
+		"name": "python_todo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16501979"
+	},
+	"item": [
+		{
+			"name": "create_todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Complete Documentation\",\n    \"status\": false,\n    \"description\": \"Update documentation with latest changes\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "update_todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Complete Documentation\",\n    \"status\": false,\n    \"description\": \"Update documentation with latest changes\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/update/66802fb9f4b0099ce3b9be70"
+			},
+			"response": []
+		},
+		{
+			"name": "get_todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "get_todo_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/get/66802f94f4b0099ce3b9be6f"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://127.0.0.1:5000/delete/66802fb9f4b0099ce3b9be70"
+			},
+			"response": []
+		}
+	]
+}
